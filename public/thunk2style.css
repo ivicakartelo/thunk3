@@ -209,13 +209,13 @@ card-right-inside {
 }
 
 .left .shifted {
-  left: calc(55% + 100px); /* Adjust left positioning */
+  left: calc(55% + 500px); /* Adjust left positioning */
   top: 50px;
   transform: translateX(-50%);
 }
 
 .left .item:nth-child(2) {
-  top: 200px;
+  top: 100px;
   right: 100px;
 }
 
