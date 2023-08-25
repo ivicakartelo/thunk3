@@ -5,7 +5,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import AssignmentTurnedInTwoToneIcon from '@mui/icons-material/AssignmentTurnedInTwoTone';
 
 export default function ButtonAppBar() {
@@ -23,7 +22,7 @@ export default function ButtonAppBar() {
             <AssignmentTurnedInTwoToneIcon />
           </IconButton>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            Brand name
+          Teach How To Teach React
           </Typography>
           <Button color="inherit">Price</Button>
           <Button color="inherit">Features</Button>

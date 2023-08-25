@@ -12,10 +12,7 @@ function App() {
     return (
         <>
         <CardCSSFlexOverlap />
-        <CardCSSFlex />
-        <CardCSSGrid />
-        <CardHeader />  
-        <BasicCard />
+        
         <ButtonAppBar />
         <div className='container'>
             <div className='distance'>

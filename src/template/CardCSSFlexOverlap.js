@@ -4,6 +4,7 @@ export default function CardCSSFlexOverlap() {
   return (
 <div class="flex-container">
   <div class="left">
+  Teach <span style={{ color: '#8b05fa' }}>how to</span> teach <br /> React
     <div class="item overlap">
       <img src={process.env.PUBLIC_URL + 'assets/images/1.jpg'} alt={'image 1'} />
     </div>
