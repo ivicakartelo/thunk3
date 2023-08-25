@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import {AddPostForm} from './features/posts/AddPostForm'
+import {PostsList} from './features/posts/PostsList'
+import ButtonAppBar from './ButtonAppBar'
+import Footer from './Footer'
+import BasicCard from './BasicCard'
+import CardHeader from './template/CardHeader'
+import CardCSSGrid from './template/CardCSSGrid'
+import CardCSSFlex from './template/CardCSSFlex'
+import CardCSSFlexOverlap from './template/CardCSSFlexOverlap'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+        <CardCSSFlexOverlap />
+        <CardCSSFlex />
+        <CardCSSGrid />
+        <CardHeader />  
+        <BasicCard />
+        <ButtonAppBar />
+        <div className='container'>
+            <div className='distance'>
+                <AddPostForm />
+            </div>
+            
+            <div className='distance'>
+                <PostsList />
+            </div>
+            
+        </div>
+        <Footer />
+        </>
+    )
 }
-
-export default App;
+export default App

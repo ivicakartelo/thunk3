@@ -1,0 +1,241 @@
+body {
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  }
+
+  .container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .distance {
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+
+  /* ================== Card ======================== */
+
+  .card {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+}
+.card-content {
+  background-color: #000;
+  color: #fff;
+  font-size: 140px;
+  font-weight: 900;
+  line-height: .8;
+}
+.card-content-div {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top; /* Align the content at the top */ 
+  margin: 50px 0 300px 100px;
+  background-color: #2B3132;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 30px;
+}
+.card-content-div-right {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle; /* Align the content at the top */
+  margin: 200px 0 0 50px;
+}
+card-right-inside {
+  font-size: 12px;
+}
+
+/* ================== CardCSSGrid =================== */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  gap: 50px; /* Gap between items, adjust as needed */
+  padding: 50px; /* Add padding for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #000;
+  color: #fff;
+  font-size: 140px;
+  font-weight: 900;
+  line-height: .8;
+}
+
+.grid-item {
+  width: 100%; /* Initially, items will take 100% width */
+  background-color: #f0f0f0;
+  padding: 50px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: #2B3132;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.grid-item-right {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  line-height: 1.5;
+  padding: 50px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Switch to single column layout */
+  }
+}
+
+/* ================== CardCSSFlex =================== */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to a new line on smaller screens */
+  padding: 50px; /* Add padding for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #000;
+  color: #fff;
+  font-size: 140px;
+  font-weight: 900;
+  line-height: .8;
+}
+
+.flex-item {
+  flex-basis: 50%; /* Each item takes up 50% of the container's width */
+  width: 100%; /* Initially, items will take 100% width */
+  background-color: #f0f0f0;
+  padding: 50px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: #2B3132;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.flex-item-right {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  line-height: 1.5;
+  padding: 50px;
+}
+
+@media (max-width: 768px) {
+  .flex-item {
+    flex-basis: 100%; /* On smaller screens, each item takes up 100% width */
+  }
+}
+
+/* ================== CardCSSFlexOverlap =============== */
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.item {
+  width: 400px;
+  height: 250px;
+  background-color: lightblue;
+  border: 1px solid black;
+  margin: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.item img {
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  flex: 1;
+  height: 400px;
+  background-color: lightgray;
+  margin: 0 0px;
+  z-index: 0;
+}
+
+.middle img {
+  height: 100%;
+  width: 100%;
+}
+
+.overlap {
+  position: relative;
+  z-index: 1;
+}
+
+.shifted {
+  position: absolute;
+}
+
+.left .shifted {
+  left: calc(55% + 100px); /* Adjust left positioning */
+  top: 50px;
+  transform: translateX(-50%);
+}
+
+.left .item:nth-child(2) {
+  top: 200px;
+  right: 100px;
+}
+
+.right .shifted {
+  left: 55%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.right .item:nth-child(2) {
+  top: 200px;
+  left: -50px;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .middle {
+    margin: 10px 0;
+  }
+}
