@@ -17,6 +17,11 @@ const PostExcerpt = ({ post }) => {
         setUpdateId(id);
         setShowEditForm(true);
       }
+
+      // Check if the post object and its content property exist
+    if (!post || !post.content) {
+        return null; // You can return some placeholder or handle this case differently
+    }
     
       const paragraphs = post.content.split('\n');
 
