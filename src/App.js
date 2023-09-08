@@ -14,9 +14,9 @@ import CardTailwindImage from './template/CardTailwindImage'
 function App() {
     return (
         <>
-        <CardTailwindImage />
-        <CardTailwindResponsive />
         <CardTailwind />
+        <CardTailwindResponsive />
+        <CardTailwindImage />
         <ButtonAppBar />
         <div className='container'>
             <div className='distance'>
