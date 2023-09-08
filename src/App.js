@@ -9,10 +9,12 @@ import CardCSSFlex from './template/CardCSSFlex'
 import CardCSSFlexOverlap from './template/CardCSSFlexOverlap'
 import CardTailwind from './template/CardTailwind'
 import CardTailwindResponsive from './template/CardTailwindResponsive'
+import CardTailwindImage from './template/CardTailwindImage'
 
 function App() {
     return (
         <>
+        <CardTailwindImage />
         <CardTailwindResponsive />
         <CardTailwind />
         <ButtonAppBar />
