@@ -8,12 +8,13 @@ import CardCSSGrid from './template/CardCSSGrid'
 import CardCSSFlex from './template/CardCSSFlex'
 import CardCSSFlexOverlap from './template/CardCSSFlexOverlap'
 import CardTailwind from './template/CardTailwind'
+import CardTailwindResponsive from './template/CardTailwindResponsive'
 
 function App() {
     return (
         <>
+        <CardTailwindResponsive />
         <CardTailwind />
-        <CardCSSFlexOverlap />
         <ButtonAppBar />
         <div className='container'>
             <div className='distance'>
