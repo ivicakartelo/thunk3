@@ -11,7 +11,7 @@ export default function CardHeader() {
             Teach <br /> <span style={{ color: '#8b05fa' }}>how to</span><br /> teach React
           </div>
           <div className="card-content-div-right">
-            You only know what you can teach others.
+            CardHeader
           </div>
           <div className="card-right-inside">
             

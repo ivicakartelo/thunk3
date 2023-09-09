@@ -11,7 +11,7 @@ xl:grid-cols-5
 2xl:grid-cols-6 
 lg:bg-black
 lg:text-white">
-    <p>text 1</p>
+    <p>Tailwind Responsive</p>
     <p>text 2</p>
     <p>text 3</p>
     <p>text 4</p>

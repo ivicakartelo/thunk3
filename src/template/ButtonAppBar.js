@@ -22,7 +22,7 @@ export default function ButtonAppBar() {
             <AssignmentTurnedInTwoToneIcon />
           </IconButton>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          Teach How To Teach React
+          This is Material UI Button App Bar
           </Typography>
           <Button color="inherit">Price</Button>
           <Button color="inherit">Features</Button>

@@ -1,8 +1,8 @@
 import {AddPostForm} from './features/posts/AddPostForm'
 import {PostsList} from './features/posts/PostsList'
-import ButtonAppBar from './ButtonAppBar'
+import ButtonAppBar from './template/ButtonAppBar'
 import Footer from './Footer'
-import BasicCard from './BasicCard'
+import BasicCard from './template/BasicCard'
 import CardHeader from './template/CardHeader'
 import CardCSSGrid from './template/CardCSSGrid'
 import CardCSSFlex from './template/CardCSSFlex'
@@ -14,6 +14,11 @@ import CardTailwindImage from './template/CardTailwindImage'
 function App() {
     return (
         <>
+        <BasicCard />
+        <CardHeader />
+        <CardCSSGrid />
+        <CardCSSFlex />
+        <CardCSSFlexOverlap />
         <CardTailwind />
         <CardTailwindResponsive />
         <CardTailwindImage />
